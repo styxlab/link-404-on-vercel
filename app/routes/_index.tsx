@@ -1,4 +1,4 @@
-import { Link, useFetcher } from "@remix-run/react";
+import { Link } from "@remix-run/react";
 import type { MetaFunction } from "@vercel/remix";
 
 // NOTE: When you switdh to node runtime, the first link is working again, bu then the second link fails!
@@ -12,7 +12,6 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const fetcher = useFetcher();
   return (
     <div className="flex h-screen items-center justify-center">
       <div className="flex flex-col items-center gap-16">
@@ -37,7 +36,10 @@ export default function Index() {
           <p className="leading-6 text-gray-700 dark:text-gray-200">
             What&apos;s next?
           </p>
-        <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article</Link>
+          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article with React Component - not working</Link>
+          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich-2">Link to article without React Component - working</Link>
+          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich-3">Link to article with React Component on Edge Runtime - working</Link>
+          <a href="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article with <code>{'<a> tag'} - working</code></a>
         </nav>
       </div>
     </div>

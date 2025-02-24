@@ -1,4 +1,4 @@
-export default function Article() {
+export const Article = () => {
     return (
         <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center gap-16">
