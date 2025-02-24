@@ -1,9 +1,9 @@
-import { json, Outlet, useLoaderData } from '@remix-run/react'
+import { Outlet, useLoaderData } from '@remix-run/react'
 
 export const config = { runtime: 'edge' }
 
 export const loader = async () => {
-  return json({ partner: { name: 'hello world'} })
+  return { partner: { name: 'hello world'} }
 }
 
 export default function Layout() {
@@ -11,6 +11,6 @@ export default function Layout() {
   console.log('partner', partner)
 
   return (
-      <Outlet context={partner} />
+      <Outlet />
   )
 }
