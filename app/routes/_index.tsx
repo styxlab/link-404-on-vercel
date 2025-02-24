@@ -38,6 +38,7 @@ export default function Index() {
           </p>
           <Link to="/article">Link to article - not working</Link>
           <Link to="/article2">Link to article on Edge Runtime - working</Link>
+          <Link to="/article3">Link to article with no loader - working</Link>
           <a href="/article">Link to article with <code>{'<a> tag'} - working</code></a>
         </nav>
       </div>
