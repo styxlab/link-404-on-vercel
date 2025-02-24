@@ -36,8 +36,8 @@ export default function Index() {
           <p className="leading-6 text-gray-700 dark:text-gray-200">
             What&apos;s next?
           </p>
-          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article with React Component - not working</Link>
-          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich-2">Link to article with React Component on Edge Runtime - working</Link>
+          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article - not working</Link>
+          <Link to="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich-2">Link to article on Edge Runtime - working</Link>
           <a href="/energieausweis-kosten-10-online-anbieter-im-direkten-vergleich">Link to article with <code>{'<a> tag'} - working</code></a>
         </nav>
       </div>
