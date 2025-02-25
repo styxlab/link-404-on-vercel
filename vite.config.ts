@@ -14,8 +14,8 @@ export default defineConfig({
     remix({
       presets: [vercelPreset()],
       future: {
-        v3_fetcherPersist: false,
-        v3_relativeSplatPath: false,
+        v3_fetcherPersist: true,
+        v3_relativeSplatPath: true,
         v3_throwAbortReason: false,
         v3_singleFetch: false,
         // issue with lazy route discovery on Vercel when navigating to a new route that lives in another runtime (e.g. edge -> node or node -> edge)
